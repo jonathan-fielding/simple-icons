@@ -1,0 +1,188 @@
+// Reset
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: 400;
+}
+
+// Colours
+
+@white:			#fff;
+@background:	#eee;
+@text:			#aaa;
+@link:			#888;
+@linkhover:		#555;
+@dark-grey:     #444;
+@light-grey:    #ccc;
+
+// Responsive layout
+
+body {
+	padding: 40px 0;
+	font-family: myriad-pro, "Myriad Pro", Helvetica, Arial, sans-serif;
+	font-size: 13pt;
+	text-align: center;
+	background: @background;
+	color: @text;
+	text-rendering: optimizeLegibility;
+}
+
+h1 {
+	color: @dark-grey;
+	font-size: 26pt;
+	line-height: 1.4em;
+}
+
+a {
+	color: @link;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		color: @linkhover;
+	}
+}
+
+.blurb {
+	width: 550px;
+	margin: 0 auto;
+	padding: 20px;
+	p {
+		margin: 0;
+		line-height: 1.4em;
+		&.footnotes {
+			display: block;
+			clear: both;
+			font-size: 10pt;
+			text-align: center;
+			a {
+				border-bottom: 1px solid @light-grey;
+			}
+		}
+	}
+	a.download-link {
+		display: inline-block;
+		padding: 1em 1.618em;
+		margin: 20px 0 10px;
+		line-height: 1em;
+		background: @link;
+		color: @white;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		-ms-transition: all 0.1s linear;
+		transition: all 0.1s linear;
+		&:hover {
+			background: @linkhover;
+			color: @white !important;
+		}
+	}
+}
+
+.container {
+	width: 888px;
+	margin: 0 auto;
+	padding: 5px;
+	text-align: left;
+	i {
+		display: inline-block;
+		float: left;
+		margin: 5px;
+		height: 64px;
+		width: 64px;
+	}
+}
+
+i.amazon{background-color:#ff9900;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/amazon/amazon-64.png');}
+i.android{background-color:#a4c639;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/android/android-64.png');}
+i.appdotnet{background-color:#898D90;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/appdotnet/appdotnet-64.png');}
+i.apple{background-color:#b9bfc1;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/apple/apple-64.png');}
+i.aws{background-color:#ff9900;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/aws/aws-64.png');}
+i.digg{background-color:#14589e;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/digg/digg-64.png');}
+i.dribbble{background-color:#ea4c89;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/dribbble/dribbble-64.png');}
+i.facebook{background-color:#3b5998;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/facebook/facebook-64.png');}
+i.github{background-color:#4183c4;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/github/github-64.png');}
+i.googleplus{background-color:#d14836;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/googleplus/googleplus-64.png');}
+i.linkedin{background-color:#007FB1;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/linkedin/linkedin-64.png');}
+i.path{background-color:#e41f11;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/path/path-64.png');}
+i.pinterest{background-color:#cb2027;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/pinterest/pinterest-64.png');}
+i.skype{background-color:#00aff0;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/skype/skype-64.png');}
+i.spotify{background-color:#80b719;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/spotify/spotify-64.png');}
+i.stumbleupon{background-color:#eb4924;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/stumbleupon/stumbleupon-64.png');}
+i.treehouse{background-color:#7FA24C;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/treehouse/treehouse-64.png');}
+i.tumblr{background-color:#2c4762;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/tumblr/tumblr-64.png');}
+i.twitter{background-color:#39a9e0;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/twitter/twitter-64.png');}
+i.vimeo{background-color:#44bbff;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/vimeo/vimeo-64.png');}
+i.wordpress{background-color:#21759B;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/wordpress/wordpress-64.png');}
+i.yahoo{background-color:#731a8b;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/yahoo/yahoo-64.png');}
+
+/* 16 up */
+@media
+	only screen and (min-device-width: 1234px),
+	only screen and (min-width: 1234px) {
+	.container {
+		width: 1184px !important;
+	}
+}
+
+/* 14 up */
+@media
+	only screen and (min-device-width: 1086px) and (max-device-width: 1233px),
+	only screen and (min-width: 1086px) and (max-width: 1233px) {
+	.container {
+		width: 1036px !important;
+	}
+}
+
+/* 12 up */
+@media
+	only screen and (min-device-width: 938px) and (max-device-width: 1085px),
+	only screen and (min-width: 938px) and (max-width: 1085px) {
+	.container {
+		width: 888px !important;
+	}
+}
+
+/* 10 up */
+@media
+	only screen and (min-device-width: 760px ) and (max-device-width: 937px),
+	only screen and (min-width: 760px ) and (max-width: 937px) {
+	.container {
+		width: 740px !important;
+	}
+}
+
+/* 8 up */
+@media
+	only screen and (min-device-width: 642px) and (max-device-width: 759px),
+	only screen and (min-width: 642px) and (max-width: 759px) {
+	.container {
+		width: 592px !important;
+	}
+}
+
+/* 6 up */
+@media
+	only screen and (min-device-width: 460px) and (max-device-width: 641px),
+	only screen and (min-width: 460px) and (max-width: 641px) {
+	.blurb {
+		width: 400px !important;
+	}
+	.container {
+		width: 444px !important;
+	}
+}
+
+/* 4 up */
+@media
+	only screen and (max-device-width: 459px),
+	only screen and (max-width: 459px) {
+	.blurb {
+		width: inherit !important;
+		padding: 20px 40px;
+	}
+	.container {
+		width: 296px !important;
+	}
+}

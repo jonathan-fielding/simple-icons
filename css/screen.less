@@ -13,8 +13,7 @@
 @background:	#eee;
 @text:			#aaa;
 @link:			#888;
-@linkhover:		#555;
-@dark-grey:     #444;
+@link-hover:		#555;
 @light-grey:    #ccc;
 
 // Responsive layout
@@ -30,7 +29,7 @@ body {
 }
 
 h1 {
-	color: @dark-grey;
+	color: @link;
 	font-size: 36pt;
 	line-height: 1.4em;
 }
@@ -40,7 +39,7 @@ a {
 	text-decoration: none;
 	&:hover,
 	&:focus {
-		color: @linkhover;
+		color: @link-hover;
 	}
 }
 
@@ -74,7 +73,7 @@ a {
 		-ms-transition: all 0.1s linear;
 		transition: all 0.1s linear;
 		&:hover {
-			background: @linkhover;
+			background: @link-hover;
 			color: @white !important;
 		}
 	}
@@ -101,6 +100,7 @@ i.appdotnet{background-color:#898D90;background-image:url('https://raw.github.co
 i.apple{background-color:#b9bfc1;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/apple/apple-64.png');}
 i.aws{background-color:#ff9900;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/aws/aws-64.png');}
 i.behance{background-color:#1769FF;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/behance/behance-64.png');}
+i.blogger{background-color:#F57D00;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/blogger/blogger-64.png');}
 i.digg{background-color:#14589e;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/digg/digg-64.png');}
 i.dribbble{background-color:#ea4c89;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/dribbble/dribbble-64.png');}
 i.dropbox{background-color:#2281CF;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/dropbox/dropbox-64.png');}
@@ -113,9 +113,11 @@ i.goodreads{background-color:#5A471B;background-image:url('https://raw.github.co
 i.googleplus{background-color:#d14836;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/googleplus/googleplus-64.png');}
 i.lastfm{background-color:#D51007;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/lastfm/lastfm-64.png')};
 i.linkedin{background-color:#007FB1;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/linkedin/linkedin-64.png');}
+i.orkut{background-color:#ED2590;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/orkut/orkut-64.png')}
 i.path{background-color:#e41f11;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/path/path-64.png');}
 i.pinboard{background-color:#0000ff;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/pinboard/pinboard-64.png');}
 i.pinterest{background-color:#cb2027;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/pinterest/pinterest-64.png');}
+i.posterous{background-color:#FFDD68;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/posterous/posterous-64.png');}
 i.rss{background-color:#ff8300;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/rss/rss-64.png');}
 i.skype{background-color:#00aff0;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/skype/skype-64.png');}
 i.soundcloud{background-color:#FF6600;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/soundcloud/soundcloud-64.png');}
@@ -127,6 +129,7 @@ i.twitter{background-color:#39a9e0;background-image:url('https://raw.github.com/
 i.vimeo{background-color:#44bbff;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/vimeo/vimeo-64.png');}
 i.wordpress{background-color:#21759B;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/wordpress/wordpress-64.png');}
 i.yahoo{background-color:#731a8b;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/yahoo/yahoo-64.png');}
+i.youtube{background-color:#731A8B;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/youtube/youtube-64.png');}
 
 /* Retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min-device-pixel-ratio: 2.0) {
@@ -136,6 +139,7 @@ i.yahoo{background-color:#731a8b;background-image:url('https://raw.github.com/da
 	i.apple{background-color:#b9bfc1;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/apple/apple-128.png');}
 	i.aws{background-color:#ff9900;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/aws/aws-128.png');}
 	i.behance{background-color:#1769FF;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/behance/behance-128.png');}
+	i.blogger{background-color:#F57D00;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/blogger/blogger-128.png');}
 	i.digg{background-color:#14589e;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/digg/digg-128.png');}
 	i.dribbble{background-color:#ea4c89;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/dribbble/dribbble-128.png');}
 	i.dropbox{background-color:#2281CF;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/dropbox/dropbox-128.png');}
@@ -148,9 +152,11 @@ i.yahoo{background-color:#731a8b;background-image:url('https://raw.github.com/da
 	i.googleplus{background-color:#d14836;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/googleplus/googleplus-128.png');}
 	i.lastfm{background-color:#D51007;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/lastfm/lastfm-128.png')};
 	i.linkedin{background-color:#007FB1;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/linkedin/linkedin-128.png');}
+	i.orkut{background-color:#ED2590;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/orkut/orkut-128.png')}
 	i.path{background-color:#e41f11;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/path/path-128.png');}
 	i.pinboard{background-color:#0000ff;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/pinboard/pinboard-128.png');}
 	i.pinterest{background-color:#cb2027;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/pinterest/pinterest-128.png');}
+	i.posterous{background-color:#FFDD68;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/posterous/posterous-128.png');}
 	i.rss{background-color:#ff8300;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/rss/rss-128.png');}
 	i.skype{background-color:#00aff0;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/skype/skype-128.png');}
 	i.soundcloud{background-color:#FF6600;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/soundcloud/soundcloud-128.png');}
@@ -162,6 +168,7 @@ i.yahoo{background-color:#731a8b;background-image:url('https://raw.github.com/da
 	i.vimeo{background-color:#44bbff;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/vimeo/vimeo-128.png');}
 	i.wordpress{background-color:#21759B;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/wordpress/wordpress-128.png');}
 	i.yahoo{background-color:#731a8b;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/yahoo/yahoo-128.png');}
+	i.youtube{background-color:#731A8B;background-image:url('https://raw.github.com/danleech/simple-icons/master/icons/youtube/youtube-128.png');}
 }
 
 /* 16 up */

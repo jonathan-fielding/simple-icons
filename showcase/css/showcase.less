@@ -1,0 +1,39 @@
+@import "reset.less";
+
+// Palette
+@white: #fff;
+@black: #363636;
+
+@font-stack: brandon-grotesque, Futura, 'Tw Cen MT', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+body {
+	color: @white;
+	background: @black;
+	font: 700 normal 18pt/1em @font-stack;
+}
+
+a {
+	color: @white;
+	text-decoration: none;
+}
+
+#navbar {
+	text-transform: uppercase;
+	h1 {
+		position: absolute;
+		bottom: 40px;
+		left: 40px;
+	}
+	ul {
+		position: absolute;
+		bottom: 40px;
+		right: 40px;
+		li {
+			display: inline;
+			a {
+				display: inline-block;
+				margin-left: 20px;
+			}
+		}
+	}
+}

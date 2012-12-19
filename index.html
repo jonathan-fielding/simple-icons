@@ -19,7 +19,8 @@
 		<p class="footnotes">
 			<a href="https://github.com/danleech/simple-icons/archive/master.zip" target="_blank">Download</a> - 
 			<a href="https://github.com/danleech/simple-icons#sources-and-acknowledgements">Colours &amp; Credits</a> - 
-			<a href="https://github.com/danleech/simple-icons">GitHub Project</a>
+			<a href="https://github.com/danleech/simple-icons">GitHub Project</a> - 
+			<a href="#" class="toggle-grey">Go Grey!</a>
 		</p>
 	</div>
 	<div class="container">
@@ -65,6 +66,20 @@
 		<i class="orkut"></i>
 		<i class="yahoo"></i>
 	</div>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+	$('.toggle-grey').click(function() {
+		if($(this).hasClass('grey')) {
+			$(this).html('Go Colour!'));
+			$(this).addClass('grey');
+			$('i').addClass('grey');
+		} else {
+			$(this).html('Go Grey!');
+			$(this).removeClass('grey');
+			$('i').removeClass('grey');
+		}
+	})
+	</script>
 	<script>
 		var _gauges = _gauges || [];
 		(function() {

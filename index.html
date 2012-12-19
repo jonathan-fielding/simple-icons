@@ -68,17 +68,17 @@
 	</div>
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script>
-	$('.toggle-grey').click(function() {
-		if($(this).hasClass('grey')) {
-			$(this).html('Go Colour!'));
-			$(this).addClass('grey');
-			$('i').addClass('grey');
-		} else {
-			$(this).html('Go Grey!');
-			$(this).removeClass('grey');
-			$('i').removeClass('grey');
-		}
-	})
+		$('.toggle-grey').click(function() {
+			if($(this).hasClass('grey')) {
+				$(this).html('Go Colour!'));
+				$(this).addClass('grey');
+				$('i').addClass('grey');
+			} else {
+				$(this).html('Go Grey!');
+				$(this).removeClass('grey');
+				$('i').removeClass('grey');
+			});
+		});
 	</script>
 	<script>
 		var _gauges = _gauges || [];

@@ -12,9 +12,10 @@
 // Colours
 
 @white:			#ffffff;
-@text:			#a5a6a4;
+@text:			#888888;
 @link:			#888888;
-@link-hover:	#555555;
+@link-hover:	#999999;
+@black:         #343130;
 
 // Responsive layout
 
@@ -23,7 +24,7 @@ body {
 	font-family: proxima-nova-soft, Helvetica, Arial, sans-serif;
 	font-size: 13pt;
 	text-align: center;
-	background: @white;
+	background: @black;
 	color: @text;
 	text-rendering: optimizeLegibility;
 }
@@ -107,7 +108,8 @@ a {
 }
 
 i.grey {
-	background-color: @link-hover !important;
+	background-color: transparent !important;
+	opacity: 0.4;
 }
 
 .icons(@colour: "#999", @name: "") {

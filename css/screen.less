@@ -156,6 +156,7 @@ i.kickstarter{.icons(#87C442,"kickstarter")};
 i.klout{.icons(#E24A25,"klout")};
 i.lastfm{.icons(#D51007,"lastfm")};
 i.linkedin{.icons(#007FB1,"linkedin")};
+i.mendeley{.icons(#B61F2F,"mendeley")};
 i.myspace{.icons(#008DDE,"myspace")};
 i.newsvine{.icons(#075B2F,"newsvine")};
 i.office{.icons(#EB3C00,"office")};
@@ -230,6 +231,7 @@ i.youtube{.icons(#CD332D,"youtube")};
 	i.klout{.retina-icon(#E24A25,"klout")};
 	i.lastfm{.retina-icon(#D51007,"lastfm")};
 	i.linkedin{.retina-icon(#007FB1,"linkedin")};
+	i.mendeley{.retina-icon(#B61F2F,"mendeley")};
 	i.myspace{.retina-icon(#008DDE,"myspace")};
 	i.newsvine{.retina-icon(#075B2F,"newsvine")};
 	i.office{.retina-icon(#EB3C00,"office")};
@@ -263,6 +265,41 @@ i.youtube{.icons(#CD332D,"youtube")};
 	i.yahoo{.retina-icon(#731a8b,"yahoo")};
 	i.yelp{.retina-icon(#C93C27,"yelp")};
 	i.youtube{.retina-icon(#CD332D,"youtube")};
+}
+
+#info {
+	margin: 10px;
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+	tr {
+		border-bottom: 1px solid @link;
+	}
+	th {
+		font-weight: 700;
+	}
+	td, th {
+		padding: 0.5em 0;
+	}
+	th:nth-child(1), td:nth-child(1) {
+		text-indent: 1em;
+	}
+	td:nth-child(2) {
+		padding-right: 1em;
+		font-family: source-code-pro, 'Source Code Pro', Menlo, Monaco, 'Consolas', 'Courier New', monospace;
+		font-weight: 400;
+		font-size: 0.8em;
+	}
+	td:nth-child(5) {
+		text-align: right;
+		font-family: source-code-pro, 'Source Code Pro', Menlo, Monaco, 'Consolas', 'Courier New', monospace;
+		font-weight: 400;
+		a {
+			display: inline-block;
+			padding: 0 1em;
+		}
+	}
 }
 
 /* 16 up */
@@ -308,6 +345,12 @@ i.youtube{.icons(#CD332D,"youtube")};
 	.container {
 		width: 592px !important;
 	}
+	th:nth-child(3),
+	td:nth-child(3),
+	th:nth-child(4),
+	td:nth-child(4) {
+		display: none;
+	}
 }
 
 /* 6 up */
@@ -319,6 +362,12 @@ i.youtube{.icons(#CD332D,"youtube")};
 	}
 	.container {
 		width: 444px !important;
+	}
+	th:nth-child(3),
+	td:nth-child(3),
+	th:nth-child(4),
+	td:nth-child(4) {
+		display: none;
 	}
 }
 
@@ -332,5 +381,11 @@ i.youtube{.icons(#CD332D,"youtube")};
 	}
 	.container {
 		width: 296px !important;
+	}
+	th:nth-child(3),
+	td:nth-child(3),
+	th:nth-child(4),
+	td:nth-child(4) {
+		display: none;
 	}
 }

@@ -604,7 +604,8 @@
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script>
 		$(document).ready(function() {
-			$('a.toggle-grey').click(function() {
+			$('a.toggle-grey').click(function(e) {
+				e.preventDefault();
 				$('i').toggleClass('grey');
 			});
 		});
